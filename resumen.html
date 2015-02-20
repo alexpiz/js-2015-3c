@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>resumen javascript</title>
+</head>
+<body>
+<h2>semana 1</h2>
+	<h3>lectura 1</h3>
+	<p>
+		Global Variables  all data types, objects, functions
+Declarar siempre variables locales.
+Todas las variables usadas en una función deben ser declaradas como:
+Local variables  deben ser declaradas con la keyword var, de otra forma son global variables.
+Buena práctica  Declarar las variables en la parte superior del script o una función.
+Usar:
+	{ }  objects			[ ]  arrays[ ]
+	“ ”  strings			( ){ }  function(){}
+	0   Numbers			/( )/  Regexp 
+	False  booleans
+Evitar el uso de eval()  se usa para correr texto como código en la mayoría de los casos
+	</p>
+	<h3>lectura 2</h3>
+	<p>JS soporta:
+	 Sistema runtime execution basado en datos que representan valores numéricos, booleanos y cadenas.
+	 Funciones, que pueden ser propiedades de objetos
+	 Un modelo de objetos basado en prototipos, en lugar de uno basado en clases (Java)</p>
+	 <p>¿Qué es javascript?
+	  Inventado por NETSCAPE 
+	  Lenguaje de scripting multiplataforma orientado a objetos
+	  No es útil como lenguaje independiente
+Su núcleo contiene: 
+ Contiene 1 set de objetos predefinidos como array, Date y Math 
+ Contiene 1 set de elementos como operadores, estructuras de control y declaraciones 
+ Complementado por objetos adicionales:
+       “extensiones” del lado cliente que permiten controlar el browser y el DOM, como formularios, eventos del click, etc.
+       “extensiones” del lado del servidor  extendiendo el nucleo proporcionando objetos relevantes para el servidor.
+           Permiten a las apps comunicarse con una base de datos, proveyendo un flujo constante de información.
+</p>
+<h3>lectura 3</h3>
+<p>Objeto  tiene  un determinado:
+	 Estado (atributos): datos, info, serán uno o varios atributos a los que se habran asignado valores
+	 Comportamiento (métodos): definido por metidos o mensajes a los que sabe responder el objeto.
+	     Los métodos favorecen en la comunicación entre objetos: el cambio de estado en los propios objetos, llegan a tratarlos     	     como unidades indivisibles
+	 Identidad: propiedad diferenciadora, su id.</p>
+
+	 <h2>semana 2</h2>
+	 <p>	Clase  propiedades, comportamiento de un objeto
+	•	Herencia  facilidad de una clase de heredar atributos y operaciones de otra clase, tiene orden jerarquico
+	•	Objeto  instancia de un objeto, provista de propiedades
+	•	Metodo  algoritmo asociado a un objeto, se desencadena tras la recepción de un “mensaje”.
+    Es lo que un objeto puede hacer
+	•	Evento  suceso en el sistema. Reaccion que puede desencadenar un objeto
+	•	Atributos  características de una clase
+	•	Mensaje  comunicación dirigida a un objeto, y que ordena la ejecución de un método
+	•	Propiedad  contenedor de un tipo de dato asociado a un objeto que hace los datos visibles desde afuera del objeto
+	•	Estado interno  variable declarad privada.  Solo puede ser accedido y por alterado por un método del objeto
+	•	Componentes de un objeto  atributos, identidad, relaciones y métodos
+</p>
+<p>	•	El código compilado lo optimiza dinámicamente en tiempo de ejecución basado en la neurística del perfil de ejecucion del código 
+Técnicas de optimización:
+	•	Procesos en línea
+	•	Elisión de propiedades  de ejecución 
+	•	Almacenamiento e caché</p>
+	<p>Web development  comunicación entre server – client
+	•	Server  responsable de proporcionar sitios
+	•	Client  requiere sitios del server para mostrar al usuario, suele ser un web browser
+	•	User  utiliza al cliente para navegar en Internet</p>
+	<p>¿Qué es scripting language? 
+	•	Lenguaje que soporta scripts  programas escritos para un ambiente especial en tiempo de ejecución que pueden interpretar y automatizar la ejecución de tareas
+	•	Lenguaje de programación de muy alto nivel, por el nivel de abstracción y dinamismo
+	•	Interpreta -- compila
+</p>
+<h2>semana 3</h2>
+<p>throw--> palabra reservada para excepciones
+</p>
+<p>patrón de invocación CONSTRUCTOR
+	--> este método sigue dos reglas
+		1* el nombre de la clase debe tener la primera letra en mayúscula
+			var Libro = function(nombre){
+				    this.nombre = nombre;
+				    }
+			
+		2* para crear un instancia con este patroón se usa la palabra reservada
+		   new.</p>
+		   <p>patrón de invocación por MÉTODO
+	--> Es una function de una instancia de un objeto
+		Ej: usuario = {
+			metodo: function(){
+			           this.ordenes++;	
+				} </p>
+				<p>Argumenting
+
+	Function.prototype.method = function(nombre,function){
+				       Function.prototype[nombre] = func;
+				    }				
+</p>
+
+<p>Hoisting --> es un comportamiento por default de Js,de que mover las declaraciones de de variables
+	     a la parte superior del scope.</p>
+	     <p>use strict; --> indica que el código debe ser ejecuta en "strict mode", y es algo que en la versión actual
+		de Js (ECMAScrpit version 5) ya no es ignorado.</p>
+
+		<p>usar el operador =  para comparaciones en lugar de == o ===
+--> usar el operador + para concatenar en lugar de +=
+--> Misundestanding floats --> Js tiene dificultades para precisar valores con punto (0.2)
+--> Breaking a string --> un statement se puede "quebrar" en dos líneas, pero la string en el caso de una variable con valor
+    no puede estar separada, a menos que haya backslash.</p>
+    <p>Variable names --> usan camelCase (variables and functions)
+    NAMING CONVENTIONS
+	--> Variable and function names written as camelCase
+	--> Global variable written in UPPERCASE
+	--> Constants (like PI) written in UPPERCASE</p>
+
+
+	<p>JavaScript Time Events --> los timing events permiten ejecutar Js en intervalos de tiempo
+			      es decir ejecutar, código en intervalos</p>
+			      <p>Usando el método clearInterval() 
+		*Para poder usarlo primero debemos nombrar una variable global </p>
+
+
+
+
+
+</body>
+</html>
